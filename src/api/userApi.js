@@ -3,8 +3,6 @@ import getBaseUrl from './baseUrl';
 
 const baseUrl = getBaseUrl();
 
-console.log(baseUrl);
-
 export function getUsers() {
   return get('users');
 }
@@ -32,5 +30,5 @@ function onSuccess(response) {
 }
 
 function onError(error) {
-  console.log(error);
+  console.log(error); // eslint-disable-line no-console
 }
